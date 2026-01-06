@@ -58,26 +58,26 @@ onMounted(() => {
                 <img src="../../assets/math1.png" alt="math1" />
                 <img src="../../assets/math2.png" alt="math2" />
                 <img src="../../assets/math3.png" alt="math3" />
-                <img src="../../assets/math4.png" alt="math3" />
-                <img src="../../assets/math5.png" alt="math3" />
-                <img src="../../assets/math6.png" alt="math3" />
-                <img src="../../assets/math7.png" alt="math3" />
-                <img src="../../assets/math8.png" alt="math3" />
-                <img src="../../assets/math9.png" alt="math3" />
+                <img src="../../assets/math4.png" alt="math4" />
+                <img src="../../assets/math5.png" alt="math5" />
+                <img src="../../assets/math6.png" alt="math6" />
+                <img src="../../assets/math7.png" alt="math7" />
+                <img src="../../assets/math8.png" alt="math8" />
+                <img src="../../assets/math9.png" alt="math9" />
             </figure>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sint tempora incidunt, sequi
                 exercitationem rem? Dolores, illum corporis labore at amet nobis dolor laborum obcaecati nihil, iusto
                 dicta excepturi modi.</p>
             <figure class="programmingFigures">
-                <img src="../../assets/programming1.png" alt="math1" />
-                <img src="../../assets/programming2.png" alt="math2" />
-                <img src="../../assets/programming3.png" alt="math3" />
-                <img src="../../assets/programming4.png" alt="math3" />
-                <img src="../../assets/programming5.png" alt="math3" />
-                <img src="../../assets/programming6.png" alt="math3" />
-                <img src="../../assets/programming7.png" alt="math3" />
-                <img src="../../assets/programming8.png" alt="math3" />
-                <img src="../../assets/programming9.png" alt="math3" />
+                <img src="../../assets/programming1.png" alt="programming1" />
+                <img src="../../assets/programming2.png" alt="programming2" />
+                <img src="../../assets/programming3.png" alt="programming3" />
+                <img src="../../assets/programming4.png" alt="programming4" />
+                <img src="../../assets/programming5.png" alt="programming5" />
+                <img src="../../assets/programming6.png" alt="programming6" />
+                <img src="../../assets/programming7.png" alt="programming8" />
+                <img src="../../assets/programming8.png" alt="programming9" />
+                <img src="../../assets/programming9.png" alt="programming9" />
             </figure>
         </div>
 
