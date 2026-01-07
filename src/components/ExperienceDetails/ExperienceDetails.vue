@@ -1,12 +1,26 @@
 <script lang="ts" setup>
+import { ref } from 'vue';
+
+const { handleCloseExpDetails } = defineProps<{
+    handleCloseExpDetails: () => void
+}>();
+const playAnimationClose = ref('');
+
+const handleAnimateClose = () => {
+    playAnimationClose.value = 'experienceDetailsContentDiSpawn';
+
+    setTimeout(() => {
+        handleCloseExpDetails();
+    }, 800);
+};
 </script>
 
 <template>
-    <div class="experienceDetailsContainer">
-        <div class="experienceDetailsContent">
+    <div class="experienceDetailsContainer" @click="handleAnimateClose">
+        <div :class="['experienceDetailsContent', playAnimationClose]" @click="event => event.stopPropagation()">
             <header>
                 <h1>Detalhes da<br />experiencia</h1>
-                <i class="pi pi-times"></i>
+                <i class="pi pi-times" @click="handleAnimateClose"></i>
             </header>
 
             <section>
@@ -37,7 +51,7 @@
                     sit quasi magnam obcaecati, suscipit tenetur? Iusto delectus sed maxime officiis, quod architecto
                     illum quasi nemo.</p>
 
-                <button type="button">Fechar</button>
+                <button type="button" @click="handleAnimateClose">Fechar</button>
             </section>
         </div>
     </div>

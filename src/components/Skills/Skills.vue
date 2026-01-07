@@ -39,44 +39,62 @@ onMounted(() => {
         <div class="overflowWrapper">
             <ul>
                 <li>
-                    <img src="../../assets/programming1.png" />
+                    <img src="../../assets/programming3.png" />
                     <p>Python</p>
+                    <hr />
+                    <hr />
+                </li>
+                 <li>
+                    <img src="../../assets/programming6.png" />
+                    <p>Power BI</p>
+                    <hr />
+                    <hr />
+                </li>
+                 <li>
+                    <img src="../../assets/programming7.png" />
+                    <p>Windows Ecosystem</p>
+                    <hr />
+                    <hr />
+                </li>
+                <li>
+                    <img src="../../assets/programming5.png" />
+                    <p>Excel Avancado</p>
+                    <hr />
+                    <hr />
+                </li>
+                <li>
+                    <img src="../../assets/math9.png" />
+                    <p>Analise de dados</p>
                     <hr />
                     <hr />
                 </li>
                 <li>
                     <img src="../../assets/programming1.png" />
-                    <p>Python</p>
+                    <p>Automação</p>
+                    <hr />
+                    <hr />
+                </li>
+                <li>
+                    <img src="../../assets/math5.png" />
+                    <p>Tratamento de dados</p>
                     <hr />
                     <hr />
                 </li>
                 <li>
                     <img src="../../assets/programming1.png" />
-                    <p>Python</p>
+                    <p>Relatorio e indicadores</p>
                     <hr />
                     <hr />
                 </li>
                 <li>
-                    <img src="../../assets/programming1.png" />
-                    <p>Python</p>
+                    <img src="../../assets/programming2.png" />
+                    <p>Resolução de problemas</p>
                     <hr />
                     <hr />
                 </li>
                 <li>
-                    <img src="../../assets/programming1.png" />
-                    <p>Python</p>
-                    <hr />
-                    <hr />
-                </li>
-                <li>
-                    <img src="../../assets/programming1.png" />
-                    <p>Python</p>
-                    <hr />
-                    <hr />
-                </li>
-                <li>
-                    <img src="../../assets/programming1.png" />
-                    <p>Python</p>
+                    <img src="../../assets/programming4.png" />
+                    <p>Visual Basic</p>
                     <hr />
                     <hr />
                 </li>

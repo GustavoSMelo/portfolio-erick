@@ -14,6 +14,30 @@
     }
 }
 
+@keyframes ExpItem1And3Animate {
+    from {
+        transform: translateX(3000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ExpItem2Animate {
+    from {
+        transform: translateX(-3000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-228px);
+        opacity: 1;
+    }
+}
+
 .experienceContainer {
     margin-left: 15%;
     margin-right: 15%;
@@ -23,6 +47,15 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+
+    .expItem1And3Animate,
+    .expItemMobileAnimate {
+        animation: ExpItem1And3Animate .8s forwards;
+    }
+
+    .expItem2Animate {
+        animation: ExpItem2Animate .8s forwards;
+    }
 
     .titleTypedExperience {
         width: fit-content;
@@ -44,7 +77,8 @@
         width: 750px;
     }
 
-    .experienceList, .experienceListMobile {
+    .experienceList,
+    .experienceListMobile {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -63,12 +97,26 @@
                 color: #f1c204;
                 border: solid #202020 5px;
                 border-radius: 300px;
+                transition: .4s;
+                cursor: pointer;
+            }
+
+            .checkpoint:hover {
+                color: #F5A829;
+                transition: .4s;
             }
 
             span {
                 b {
                     color: #f1c204;
                     text-decoration: underline;
+                    cursor: pointer;
+                    transition: .4s;
+                }
+
+                b:hover {
+                    color: #F5A829;
+                    transition: .4s;
                 }
             }
         }
@@ -94,6 +142,7 @@
 
     @media screen and (max-width: 850px) {
         margin-left: 7%;
+
         .titleTypedExperience {
             font-size: 28pt;
         }
@@ -115,6 +164,7 @@
             transform: translateX(0);
             display: flex;
             margin-bottom: 50px;
+            overflow-x: hidden;
 
             .experienceItem:nth-child(2) {
                 display: flex;
@@ -129,15 +179,17 @@
 
             .experienceItem {
                 position: relative;
+
                 .experienceTrackItem {
-                    width: 120px;
+                    width: 180px;
                     position: absolute;
                     border: solid 3px #202020;
                     border-radius: 300px;
-                    transform: rotate(90deg) translateX(120px);
-                    left: -25px;
+                    transform: rotate(90deg) translateX(160px);
+                    left: -53px;
                     top: 20px;
                 }
+
                 .checkpoint {
                     z-index: 2;
                 }

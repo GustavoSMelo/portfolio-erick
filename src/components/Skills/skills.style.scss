@@ -47,7 +47,8 @@
     .overflowWrapper {
         width: 100%;
         overflow: hidden;
-        padding-bottom: 120px;
+        padding-bottom: 210px;
+        transform: translateY(-150px);
 
         ul {
             list-style: none;
@@ -55,7 +56,7 @@
             border-radius: 5px;
             width: fit-content;
             transform: rotate(180%);
-            animation: slideToRight 30s infinite;
+            animation: slideToRight 60s infinite;
             margin-bottom: 200px;
             border-top: solid 5px #202020;
             padding-top: 50px;
@@ -75,6 +76,7 @@
 
                 p {
                     border-top: solid 2px #202020;
+                    font-size: 14pt;
                 }
 
                 img {
