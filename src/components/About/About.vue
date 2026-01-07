@@ -25,7 +25,7 @@ onMounted(() => {
                     element?.classList.add('aboutBoxShowAnimate');
                 }
 
-                if(entry.target.classList.contains('erickCartContainer')) {
+                if (entry.target.classList.contains('erickCartContainer')) {
                     const element = window.document.querySelector('.erickCartContainer');
                     element?.classList.add('erickCartContainerAnimation');
                 }
@@ -65,9 +65,11 @@ onMounted(() => {
                 <img src="../../assets/math8.png" alt="math8" />
                 <img src="../../assets/math9.png" alt="math9" />
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sint tempora incidunt, sequi
-                exercitationem rem? Dolores, illum corporis labore at amet nobis dolor laborum obcaecati nihil, iusto
-                dicta excepturi modi.</p>
+            <p>Sou analista de dados e desenvolvedor Python, apaixonado por transformar dados
+                em informações úteis no dia a dia. Trabalho com coleta, organização
+                e análise de dados, além de criar automações e soluções
+                que facilitam processos. Gosto de entender o problema
+                antes de buscar a melhor solução.</p>
             <figure class="programmingFigures">
                 <img src="../../assets/programming1.png" alt="programming1" />
                 <img src="../../assets/programming2.png" alt="programming2" />

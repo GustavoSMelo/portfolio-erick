@@ -27,6 +27,7 @@
         transform: skewY(-10deg) translateX(0);
     }
 }
+
 .skillsContainer {
     display: flex;
     justify-content: center;
@@ -94,6 +95,12 @@
                     left: 143px;
                 }
             }
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        h1 {
+            font-size: 28pt;
         }
     }
 }
