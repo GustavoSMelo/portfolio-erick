@@ -48,7 +48,8 @@
     justify-content: center;
     margin-bottom: 40px;
 
-    .expItem1And3Animate,
+    .expItem1Animate,
+    .expItem3Animate
     .expItemMobileAnimate {
         animation: ExpItem1And3Animate .8s forwards;
     }

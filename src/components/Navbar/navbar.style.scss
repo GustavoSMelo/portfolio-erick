@@ -49,6 +49,7 @@
     position: fixed;
     top: 0;
     z-index: 10;
+    overflow-x: hidden;
 
     figure {
         color: #f1c204;
@@ -115,7 +116,7 @@
             border-bottom: 2px solid #f1c204;
         }
 
-        button:last-child {
+        button.btnDownloadCv {
             background-color: #f1c204;
             padding: 10px 15px;
             border-radius: 5px;
@@ -125,10 +126,8 @@
 
         }
 
-        button:hover:last-child {
-            background-color: #f1c204;
-            border-bottom: 0;
-            transform: scale(1.05);
+        button.btnDownloadCv:hover {
+            background-color: #F5A829;
             transition: .4s;
         }
     }
@@ -196,6 +195,7 @@
                 background-color: #f1c204;
                 border-radius: 5px;
                 padding: 10px;
+                color: #202020;
             }
         }
     }
@@ -220,6 +220,10 @@
     .navbarContainer {
         flex-direction: row;
 
+        figure {
+            animation: none;
+        }
+
         .mobileIcon {
             display: block;
             cursor: pointer;
@@ -227,6 +231,14 @@
 
         .controlsButtonsContainer {
             display: none;
+        }
+
+        .mobileMenu {
+            .mobileMenuCOntrolsList {
+                figure {
+                    animation: none !important;
+                }
+            }
         }
     }
 }

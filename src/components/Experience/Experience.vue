@@ -21,7 +21,7 @@ onMounted(() => {
 
                 if (entry.target.classList.contains('expItem1')) {
                     const expItem1 = window.document.querySelector('.expItem1') as any;
-                    expItem1?.classList.add('expItem1And3Animate');
+                    expItem1?.classList.add('expItem1Animate');
 
                     observer.unobserve(expItem1);
                 }
@@ -35,7 +35,7 @@ onMounted(() => {
 
                 if (entry.target.classList.contains('expItem3')) {
                     const expItem3 = window.document.querySelector('.expItem3') as any;
-                    expItem3?.classList.add('expItem1And3Animate');
+                    expItem3?.classList.add('expItem3Animate');
 
                     observer.unobserve(expItem3);
                 }
