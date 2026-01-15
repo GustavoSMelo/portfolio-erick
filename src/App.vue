@@ -13,7 +13,7 @@ import Contact from './components/Contact/Contact.vue';
 import Footer from './components/Footer/Footer.vue';
 import { ref } from 'vue';
 
-const choosedExpDetails = ref(0);
+const choosedExpDetails = ref<0 | 1 | 2 | 3>(0);
 
 const handleChooseExpDetails = (choosed: 1 | 2 | 3) => {
     choosedExpDetails.value = choosed;
@@ -22,6 +22,7 @@ const handleChooseExpDetails = (choosed: 1 | 2 | 3) => {
 const handleCloseExpDetails = () => {
     choosedExpDetails.value = 0;
 };
+
 </script>
 <template>
     <Navbar />
@@ -30,7 +31,7 @@ const handleCloseExpDetails = () => {
     <Projects />
     <Skills />
     <Experience :handle-choose-exp-details="handleChooseExpDetails" />
-    <ExperienceDetails v-if="choosedExpDetails > 0" :handle-close-exp-details="handleCloseExpDetails" />
+    <ExperienceDetails v-if="choosedExpDetails > 0" :choosed-experience="choosedExpDetails" :handle-close-exp-details="handleCloseExpDetails" />
     <Contact />
     <Footer />
 </template>

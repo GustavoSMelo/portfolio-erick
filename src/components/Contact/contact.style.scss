@@ -16,10 +16,10 @@
 
 @keyframes showContactItemListAnimation {
     from {
-        transform: translateY(4000px);
+        transform: translateX(4000px);
         opacity: 0;
     } to {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }

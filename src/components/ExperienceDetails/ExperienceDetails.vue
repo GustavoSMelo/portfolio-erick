@@ -1,10 +1,13 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { onBeforeMount, ref } from 'vue';
+import { type IExperienceList, experienceList } from '../../helper/experienceList';
 
-const { handleCloseExpDetails } = defineProps<{
+const { choosedExperience, handleCloseExpDetails } = defineProps<{
+    choosedExperience: 0 | 1 | 2 | 3,
     handleCloseExpDetails: () => void
 }>();
 const playAnimationClose = ref('');
+const experienceDetailsInfo = ref<IExperienceList>();
 
 const handleAnimateClose = () => {
     playAnimationClose.value = 'experienceDetailsContentDiSpawn';
@@ -13,43 +16,46 @@ const handleAnimateClose = () => {
         handleCloseExpDetails();
     }, 800);
 };
+
+onBeforeMount(() => {
+    const expList = experienceList[choosedExperience - 1] as IExperienceList;
+    experienceDetailsInfo.value = { ...expList };
+});
 </script>
 
 <template>
     <div class="experienceDetailsContainer" @click="handleAnimateClose">
         <div :class="['experienceDetailsContent', playAnimationClose]" @click="event => event.stopPropagation()">
             <header>
-                <h1>Detalhes da<br />experiencia</h1>
+                <h1>Detalhes da<br />experiência</h1>
                 <i class="pi pi-times" @click="handleAnimateClose"></i>
             </header>
 
             <section>
                 <span>
                     <figure>
-                        <img src="../../assets/erickcarrinho.png" alt="logoEmpresa" />
-                        <figcaption>Empresa nome</figcaption>
+                        <img :src="`/${experienceDetailsInfo?.companyImage}`" alt="logoEmpresa" />
+                        <figcaption>{{ experienceDetailsInfo?.companyName }}</figcaption>
                     </figure>
                     <ul>
                         <li>
                             <b>Cargo: </b>
-                            <p>Analista de dados</p>
+                            <p>{{ experienceDetailsInfo?.position }}</p>
                         </li>
 
                         <li>
-                            <b>Periodo do servico: </b>
-                            <p>10/10/2010 ~ 10/10/2010</p>
+                            <b>Periodo do serviço: </b>
+                            <p>{{ experienceDetailsInfo?.startAt }} ~ {{ experienceDetailsInfo?.endAt }}</p>
                         </li>
 
                         <li>
                             <b>Localidade: </b>
-                            <p>Sao Paulo/SP</p>
+                            <p>{{ experienceDetailsInfo?.locale }}</p>
                         </li>
                     </ul>
                 </span>
-                <h2>Detalhes do servico</h2>
-                <p class="workDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis eos enim ipsa molestias minima
-                    sit quasi magnam obcaecati, suscipit tenetur? Iusto delectus sed maxime officiis, quod architecto
-                    illum quasi nemo.</p>
+                <h2>Detalhes do serviço</h2>
+                <p class="workDescription">{{ experienceDetailsInfo?.description }}</p>
 
                 <button type="button" @click="handleAnimateClose">Fechar</button>
             </section>

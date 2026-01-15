@@ -82,7 +82,7 @@ onMounted(() => {
                 </li>
                 <li>
                     <img src="../../assets/programming1.png" />
-                    <p>Relatorio e indicadores</p>
+                    <p>Relatório e indicadores</p>
                     <hr />
                     <hr />
                 </li>

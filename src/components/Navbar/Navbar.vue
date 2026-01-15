@@ -74,7 +74,7 @@ const scrollTo = (view: INavbar['scrollToView']): void => {
             <button type="button" @click="scrollTo('about')">Sobre</button>
             <button type="button" @click="scrollTo('projects')">Projetos</button>
             <button type="button" @click="scrollTo('skills')">Skills</button>
-            <button type="button" @click="scrollTo('experience')">Experiencia</button>
+            <button type="button" @click="scrollTo('experience')">Experiência</button>
             <button type="button" @click="scrollTo('contact')">Contato</button>
             <button class="btnDownloadCv" type="button" @click="handleDownloadCV">Baixar CV</button>
         </div>
@@ -95,7 +95,7 @@ const scrollTo = (view: INavbar['scrollToView']): void => {
                 <li @click="scrollTo('about')">Sobre</li>
                 <li @click="scrollTo('projects')">Projetos</li>
                 <li @click="scrollTo('skills')">Skills</li>
-                <li @click="scrollTo('experience')">Experiencia</li>
+                <li @click="scrollTo('experience')">Experiência</li>
                 <li @click="scrollTo('contact')">Contato</li>
                 <li @click="handleDownloadCV">Baixar CV</li>
             </ul>

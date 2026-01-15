@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
+import { experienceList } from '../../helper/experienceList';
 
 const { handleChooseExpDetails } = defineProps<{ handleChooseExpDetails: (choosed: 1 | 2 | 3) => void }>();
 const titleTyped = ref('');
@@ -82,9 +83,9 @@ onMounted(() => {
             <li class="experienceItem expItem1">
                 <i class="pi pi-circle-fill checkpoint" @click="handleChooseExpDetails(1)"></i>
                 <span>
-                    <h3>Analista de dados</h3>
-                    <h3>10/10/2010 ~ 10/10/2010</h3>
-                    <h3>Empresa Name inc.</h3>
+                    <h3>{{ experienceList[0]?.position }}</h3>
+                    <h3>{{ experienceList[0]?.startAt }} ~ {{ experienceList[0]?.endAt }}</h3>
+                    <h3>{{ experienceList[0]?.companyName }}</h3>
                     <b @click="handleChooseExpDetails(1)">Ver detalhes</b>
                 </span>
             </li>
@@ -92,9 +93,9 @@ onMounted(() => {
             <li class="experienceItem expItem2">
                 <i class="pi pi-circle-fill checkpoint" @click="handleChooseExpDetails(2)"></i>
                 <span>
-                    <h3>Analista de dados</h3>
-                    <h3>10/10/2010 ~ 10/10/2010</h3>
-                    <h3>Empresa Name inc.</h3>
+                    <h3>{{ experienceList[1]?.position }}</h3>
+                    <h3>{{ experienceList[1]?.startAt }} ~ {{ experienceList[1]?.endAt }}</h3>
+                    <h3>{{ experienceList[1]?.companyName }}</h3>
                     <b @click="handleChooseExpDetails(2)">Ver detalhes</b>
                 </span>
             </li>
@@ -102,9 +103,9 @@ onMounted(() => {
             <li class="experienceItem expItem3">
                 <i class="pi pi-circle-fill checkpoint" @click="handleChooseExpDetails(3)"></i>
                 <span>
-                    <h3>Analista de dados</h3>
-                    <h3>10/10/2010 ~ 10/10/2010</h3>
-                    <h3>Empresa Name inc.</h3>
+                    <h3>{{ experienceList[2]?.position }}</h3>
+                    <h3>{{ experienceList[2]?.startAt }} ~ {{ experienceList[2]?.endAt }}</h3>
+                    <h3>{{ experienceList[2]?.companyName }}</h3>
                     <b @click="handleChooseExpDetails(3)">Ver detalhes</b>
                 </span>
             </li>
@@ -116,9 +117,9 @@ onMounted(() => {
                 <hr class="experienceTrackItem" />
                 <i class="pi pi-circle-fill checkpoint" @click="handleChooseExpDetails(1)"></i>
                 <span>
-                    <h3>Analista de dados</h3>
-                    <h3>10/10/2010 ~ 10/10/2010</h3>
-                    <h3>Empresa Name inc.</h3>
+                    <h3>{{ experienceList[0]?.position }}</h3>
+                    <h3>{{ experienceList[0]?.startAt }} ~ {{ experienceList[0]?.endAt }}</h3>
+                    <h3>{{ experienceList[0]?.companyName }}</h3>
                     <b @click="handleChooseExpDetails(1)">Ver detalhes</b>
                 </span>
             </li>
@@ -127,9 +128,9 @@ onMounted(() => {
                 <hr class="experienceTrackItem" />
                 <i class="pi pi-circle-fill checkpoint" @click="handleChooseExpDetails(2)"></i>
                 <span>
-                    <h3>Analista de dados</h3>
-                    <h3>10/10/2010 ~ 10/10/2010</h3>
-                    <h3>Empresa Name inc.</h3>
+                    <h3>{{ experienceList[1]?.position }}</h3>
+                    <h3>{{ experienceList[1]?.startAt }} ~ {{ experienceList[1]?.endAt }}</h3>
+                    <h3>{{ experienceList[1]?.companyName }}</h3>
                     <b @click="handleChooseExpDetails(2)">Ver detalhes</b>
                 </span>
             </li>
@@ -137,9 +138,9 @@ onMounted(() => {
             <li class="experienceItem expItem3Mobile">
                 <i class="pi pi-circle-fill checkpoint" @click="handleChooseExpDetails(3)"></i>
                 <span>
-                    <h3>Analista de dados</h3>
-                    <h3>10/10/2010 ~ 10/10/2010</h3>
-                    <h3>Empresa Name inc.</h3>
+                    <h3>{{ experienceList[2]?.position }}</h3>
+                    <h3>{{ experienceList[2]?.startAt }} ~ {{ experienceList[2]?.endAt }}</h3>
+                    <h3>{{ experienceList[2]?.companyName }}</h3>
                     <b @click="handleChooseExpDetails(3)">Ver detalhes</b>
                 </span>
             </li>

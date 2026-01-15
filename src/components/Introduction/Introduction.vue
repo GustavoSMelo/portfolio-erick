@@ -2,18 +2,51 @@
 import { onMounted, ref } from 'vue';
 
 const projectProductionCounter = ref(0);
+const certificationsCounter = ref(0);
+const coffeeCounter = ref(0);
+const workedHours = ref(0);
 
 const increaseProjectCounter = () => {
-    if (projectProductionCounter.value < 50) {
+    if (projectProductionCounter.value < 7) {
         setTimeout(() => {
             projectProductionCounter.value++
             increaseProjectCounter();
-        }, 40)
+        }, 340);
+    }
+};
+
+const increaseCertificationsCounter = () => {
+    if (certificationsCounter.value < 26) {
+        setTimeout(() => {
+            certificationsCounter.value++;
+            increaseCertificationsCounter();
+        }, 100);
+    }
+};
+
+const increaseCoffeeCounter = () => {
+    if (coffeeCounter.value < 654) {
+        setTimeout(() => {
+            coffeeCounter.value++;
+            increaseCoffeeCounter();
+        }, 13);
+    }
+};
+
+const increaseWorkedHours = () => {
+        if (workedHours.value < 900) {
+        setTimeout(() => {
+            workedHours.value++;
+            increaseWorkedHours();
+        }, 10);
     }
 };
 
 onMounted(() => {
     increaseProjectCounter();
+    increaseCertificationsCounter();
+    increaseCoffeeCounter();
+    increaseWorkedHours();
 });
 
 </script>
@@ -34,17 +67,18 @@ onMounted(() => {
 
                 <span class="gridProjects">
                     <div class="projectCounterDetails">
-                        <h4>{{projectProductionCounter}}</h4> <span>Projetos em producao</span>
+                        <h4>{{ projectProductionCounter }}</h4> <span>Projetos em produção</span>
                     </div>
                     <div class="projectCounterDetails">
-                        <h4>00</h4> <span>Dashboards</span>
+                        <h4>{{ certificationsCounter }}</h4> <span>Certificações</span>
                     </div>
                     <div class="projectCounterDetails">
-                        <h4>00</h4> <span>Pipelines</span>
+                        <h4>{{ coffeeCounter }}</h4> <span>Xícaras de café</span>
                     </div>
                     <div class="projectCounterDetails">
-                        <h4>00</h4> <span>Certificacoes</span>
+                        <h4>{{ workedHours }}</h4> <span>Horas trabalhadas</span>
                     </div>
+
                 </span>
             </div>
 

@@ -83,7 +83,7 @@ onMounted(() => {
             </figure>
         </div>
 
-        <h2 class="rotatedBoxAlertText">Essa caixa nao esta torta, e apenas uma questao de perspectiva</h2>
+        <h2 class="rotatedBoxAlertText">Essa caixa nao está torta, é apenas uma questão de perspectiva</h2>
 
         <figure class="erickCartContainer">
             <img class="erickCart" src="../../assets/erickcarrinho.png" alt="Erick carrinho" />
